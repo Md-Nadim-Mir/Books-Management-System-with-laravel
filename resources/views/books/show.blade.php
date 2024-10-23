@@ -2,7 +2,7 @@
 
 @section('content')
 
-<a href="{{ route('books.index') }}">Back</a>
+<legend style=" font-weight: bold; font-size: 32px;" class="text-center mt-2 mb-5">Book Details</legend>
 
 <table class="table table-striped">
     <tr>
@@ -22,9 +22,15 @@
         <td>{{$book->isbn}}</td>
     </tr>
     <tr>
+        <th>Stock</th></th>
+        <td>{{$book->stock}}</td>
+    </tr>
+    <tr>
         <th>Price</th>
         <td>{{$book->price}}</td>
     </tr>
 </table>
+
+<a class="btn btn-primary" href="{{ route('books.index') }}">Back</a> 
 
 @endsection

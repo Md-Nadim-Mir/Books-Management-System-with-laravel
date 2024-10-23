@@ -3,15 +3,15 @@
 @section('content')
 
 <p class="text-end">
-    <a class="btn btn-dark" href="{{ route('books.create') }}">New Book</a>
+    <a class="btn btn-primary my-2" href="{{ route('books.create') }}">New Book</a>
 </p>
 
 <table class="table table-striped table-bordered">
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Actions</th>
+    <tr class="table-primary text-white" >
+        <th class="text-[black] fw-bold">ID</th>
+        <th class="text-[black] fw-bold">Title</th>
+        <th class="text-[black] fw-bold">Author</th>
+        <th class="text-[black] fw-bold">Actions</th>
     </tr>
 
     @foreach ($books as $book)
